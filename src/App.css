@@ -1,0 +1,15 @@
+.result {
+  display: flex;
+}
+
+.result__end {
+  background-color: #ddd;
+  height: 50px;
+  width: 250px;
+}
+
+.all-data {
+  display: flex;
+  column-gap: 100px;
+  flex-wrap: wrap;
+}
