@@ -6,33 +6,33 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-
     "format": "prettier . --ignore-path .gitignore --write",
     "lint": "eslint . --ignore-path .gitignore --fix",
     "fix-style": "npm run format & npm run lint",
     "prepare": "husky install",
-
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "husky": {
-        "hooks": {
-          "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.ts": [
-          "eslint --fix",
-          "prettier --write"
-        ],
-        "*.tsx": [
-          "eslint --fix",
-          "prettier --write"
-        ]
-    },
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.tsx": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
     "@types/react": "^18.3.12",
