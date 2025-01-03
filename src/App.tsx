@@ -45,7 +45,6 @@ function App() {
   console.log(allMatches);
 
   const newNumberResult = allMatches.map((match) => +match);
-  console.log(newNumberResult);
 
   const max = Math.max(...newNumberResult);
 
