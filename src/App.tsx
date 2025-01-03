@@ -42,7 +42,6 @@ function App() {
 
     allMatches.push(match);
   }
-  console.log(allMatches);
 
   const newNumberResult = allMatches.map((match) => +match);
 
