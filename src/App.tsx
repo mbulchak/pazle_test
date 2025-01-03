@@ -45,10 +45,6 @@ function App() {
 
   const newNumberResult = allMatches.map((match) => +match);
 
-  const max = Math.max(...newNumberResult);
-
-  console.log(max);
-
   return (
     <>
       <h2>Pazzle</h2>
