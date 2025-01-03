@@ -16,8 +16,6 @@ function App() {
     allData3.push(number);
   }
 
-  console.log('allData', allData3);
-
   const allMatches = [];
   let match = '';
 
@@ -26,7 +24,6 @@ function App() {
 
     let lastPart = first.slice(4);
     let firstPart = first.slice(0, 5);
-    // console.log(lastPart);
 
     match = firstPart;
 
@@ -49,6 +46,10 @@ function App() {
 
   const newNumberResult = allMatches.map((match) => +match);
   console.log(newNumberResult);
+
+  const max = Math.max(...newNumberResult);
+
+  console.log(max);
 
   return (
     <>

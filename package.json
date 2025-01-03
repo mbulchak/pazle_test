@@ -11,7 +11,7 @@
     "fix-style": "npm run format & npm run lint",
     "prepare": "husky install",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && npx gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
